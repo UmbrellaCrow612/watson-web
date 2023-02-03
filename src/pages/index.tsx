@@ -40,7 +40,7 @@ export default function Page() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
       </Head>
-      <div className="h-[50rem] flex flex-col gap-4 items-center justify-center text-center">
+      <section className="h-[30rem] flex flex-col gap-4 items-center justify-center text-center">
         <h1 className="font-bold text-xl lg:text-2xl">
           Search IBM skills website with ease using our advanced AI chat bot
         </h1>
@@ -52,7 +52,25 @@ export default function Page() {
           text="Sure, here are some resources ..."
           receivingMessage={true}
         />
-      </div>
+      </section>
+
+      {/* Steps */}
+
+      <section className="h-[25rem] text-center flex flex-col items-center justify-center">
+        <h2 className="font-bold text-xl md:tet-2xl">
+          How to use our AI Chat bot
+        </h2>
+        <ul className="steps steps-vertical">
+          <li className="step step-primary">
+            Click on the bottom right icon
+          </li>
+          <li className="step step-primary">
+            Write what you want to learn, achieve or get
+          </li>
+          <li className="step step-primary">Press send</li>
+          <li className="step step-primary">Receive a pathway of links</li>
+        </ul>
+      </section>
     </>
   );
 }
