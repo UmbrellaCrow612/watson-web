@@ -57,7 +57,7 @@ export default function Page() {
       {/* Steps */}
 
       <section className="h-[25rem] text-center flex flex-col items-center justify-center">
-        <h2 className="font-bold text-xl md:tet-2xl">
+        <h2 className="font-bold text-xl md:text-2xl">
           How to use our AI Chat bot
         </h2>
         <ul className="steps steps-vertical">
