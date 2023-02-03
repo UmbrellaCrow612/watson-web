@@ -47,9 +47,9 @@ export default function ThemeSwitcher() {
   }, [input]);
 
   return (
-    <>
+    <div className="tooltip tooltip-bottom" data-tip="Theme">
       <div className="dropdown dropdown-end">
-        <label tabIndex={0} className="text-xl btn btn-outline">
+        <label tabIndex={0} className="text-xl btn btn-ghost">
           <HiOutlineColorSwatch />
         </label>
         <ul
@@ -72,6 +72,6 @@ export default function ThemeSwitcher() {
           ))}
         </ul>
       </div>
-    </>
+    </div>
   );
 }
