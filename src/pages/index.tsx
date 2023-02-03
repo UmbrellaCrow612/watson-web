@@ -1,6 +1,8 @@
 import ChatBubble from "@/components/ChatBubble";
 import Head from "next/head";
+import Link from "next/link";
 import Script from "next/script";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 export default function Page() {
   return (
@@ -56,20 +58,28 @@ export default function Page() {
 
       {/* Steps */}
 
-      <section className="h-[25rem] text-center flex flex-col items-center justify-center">
+      <section className="h-[25rem] gap-3 text-center flex flex-col items-center justify-center">
         <h2 className="font-bold text-xl md:text-2xl">
           How to use our AI Chat bot
         </h2>
         <ul className="steps steps-vertical">
-          <li className="step step-primary">
-            Click on the bottom right icon
-          </li>
+          <li className="step step-primary">Click on the bottom right icon</li>
           <li className="step step-primary">
             Write what you want to learn, achieve or get
           </li>
           <li className="step step-primary">Press send</li>
           <li className="step step-primary">Receive a pathway of links</li>
         </ul>
+      </section>
+
+      {/* IBM profile */}
+      <section className="h-[30rem] flex flex-col gap-4 items-center justify-center text-center">
+        <h3 className="font-bold text-xl md:text-2xl">
+          Make an IBM skills build account to track you&apos;re progress
+        </h3>
+        <Link href="https://skillsbuild.org/" className="btn btn-primary text-xl gap-3">
+          Go <AiOutlineArrowRight />
+        </Link>
       </section>
     </>
   );
