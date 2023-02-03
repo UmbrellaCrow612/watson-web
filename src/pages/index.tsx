@@ -41,7 +41,7 @@ export default function Page() {
         <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
       </Head>
       <div className="h-[40rem] flex flex-col gap-4 items-center justify-center text-center">
-        <h1 className="font-bold text-xl">
+        <h1 className="font-bold text-xl lg:text-2xl">
           Search IBM skills website with ease using our advanced AI chat bot
         </h1>
         <ChatBubble
