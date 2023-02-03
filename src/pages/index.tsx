@@ -1,9 +1,16 @@
+import Head from "next/head";
 import Script from "next/script";
 
 export default function Page() {
   return (
     <>
-      <Script id="watson">
+      <Script
+        id="watson"
+        strategy="lazyOnload"
+        onError={() => {
+          console.log("Watson not working index.tsx");
+        }}
+      >
         {`  window.watsonAssistantChatOptions = {
     integrationID: "9e1d9225-e6df-4f38-a99f-351d5418a8bd", // The ID of this integration.
     region: "eu-gb", // The region your integration is hosted in.
@@ -16,6 +23,22 @@ export default function Page() {
     document.head.appendChild(t);
   });`}
       </Script>
+      <Head>
+        <title>IBM AI Skills Build</title>
+        <meta
+          name="keywords"
+          content="IBM AI SKILLS BUILD LEARN STUDENT CYBER RESOURCE LINKS NAVIGATE"
+        />
+        <meta
+          name="description"
+          content="The portal to find and navigate the vast amount of resources and learning materials offered by IBM skills build"
+        />
+        <meta httpEquiv="X-UA-Compatible" content="IE=7" />
+        <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
+        <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+      </Head>
       <div>Hello</div>
     </>
   );
