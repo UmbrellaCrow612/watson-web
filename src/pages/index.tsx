@@ -1,3 +1,4 @@
+import ChatBubble from "@/components/ChatBubble";
 import Head from "next/head";
 import Script from "next/script";
 
@@ -39,8 +40,18 @@ export default function Page() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
       </Head>
-      <div className="h-[40rem] flex items-center justify-center text-center">
-        <h1 className="font-bold text-xl">Search IBM skills website with ease using our advanced AI chat bot</h1>
+      <div className="h-[40rem] flex flex-col gap-4 items-center justify-center text-center">
+        <h1 className="font-bold text-xl">
+          Search IBM skills website with ease using our advanced AI chat bot
+        </h1>
+        <ChatBubble
+          text="Hi I want to learn about cyber security"
+          receivingMessage={false}
+        />
+        <ChatBubble
+          text="Sure, here are some resources ..."
+          receivingMessage={true}
+        />
       </div>
     </>
   );
