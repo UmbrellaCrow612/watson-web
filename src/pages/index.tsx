@@ -39,7 +39,9 @@ export default function Page() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
       </Head>
-      <div>Hello</div>
+      <div className="h-[40rem] flex items-center justify-center text-center">
+        <h1 className="font-bold text-xl">Search IBM skills website with ease using our advanced AI chat bot</h1>
+      </div>
     </>
   );
 }
