@@ -119,6 +119,12 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      {/* Trust brand */}
+
+      <section className="h-[25rem] flex items-center justify-center text-center">
+        <h4 className="text-xl font-bold lg:text-2xl">Content and technology you can trust, backed by experts.</h4>
+      </section>
     </>
   );
 }
