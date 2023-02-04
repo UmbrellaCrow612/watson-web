@@ -4,18 +4,18 @@ export default function MobileMenu() {
   return (
     <div className="tooltip tooltip-bottom" data-tip="Menu">
       <div className="dropdown dropdown-end">
-        <label tabIndex={0} className="btn btn-ghost text-2xl">
+        <label tabIndex={0} className="text-2xl btn btn-ghost">
           <BiMenuAltRight />
         </label>
         <ul
           tabIndex={0}
-          className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+          className="p-2 shadow dropdown-content menu bg-base-100 rounded-box w-52"
         >
           <li>
-            <a>Item 1</a>
+            <a className="btn btn-ghost">Login</a>
           </li>
           <li>
-            <a>Item 2</a>
+            <a className="btn btn-ghost">Sign up</a>
           </li>
         </ul>
       </div>
