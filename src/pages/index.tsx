@@ -2,7 +2,9 @@ import ChatBubble from "@/components/ChatBubble";
 import Head from "next/head";
 import Link from "next/link";
 import Script from "next/script";
-import { AiOutlineArrowRight } from "react-icons/ai";
+import { AiOutlineArrowRight, AiOutlineUsergroupAdd } from "react-icons/ai";
+import { TbFileCertificate } from "react-icons/tb";
+import { FaRegHandshake } from "react-icons/fa";
 
 export default function Page() {
   return (
@@ -43,7 +45,7 @@ export default function Page() {
         <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
       </Head>
       <section className="h-[30rem] flex flex-col gap-4 items-center justify-center text-center">
-        <h1 className="font-bold text-xl lg:text-2xl">
+        <h1 className="text-xl font-bold lg:text-2xl">
           Search IBM skills website with ease using our advanced AI chat bot
         </h1>
         <ChatBubble
@@ -59,7 +61,7 @@ export default function Page() {
       {/* Steps */}
 
       <section className="h-[25rem] gap-3 text-center flex flex-col items-center justify-center">
-        <h2 className="font-bold text-xl md:text-2xl">
+        <h2 className="text-xl font-bold md:text-2xl">
           How to use our AI Chat bot
         </h2>
         <ul className="steps steps-vertical">
@@ -74,12 +76,48 @@ export default function Page() {
 
       {/* IBM profile */}
       <section className="h-[30rem] flex flex-col gap-4 items-center justify-center text-center">
-        <h3 className="font-bold text-xl md:text-2xl">
+        <h3 className="text-xl font-bold md:text-2xl">
           Make an IBM skills build account to track you&apos;re progress
         </h3>
-        <Link href="https://skillsbuild.org/" className="btn btn-primary text-xl gap-3">
+        <Link
+          href="https://skillsbuild.org/"
+          className="gap-3 text-xl btn btn-primary"
+        >
           Go <AiOutlineArrowRight />
         </Link>
+      </section>
+
+      {/* Stats  */}
+
+      <section className="h-[30rem] flex items-center justify-center">
+        <div className="shadow stats stats-vertical lg:stats-horizontal">
+          <div className="stat">
+            <div className="stat-figure text-primary">
+              <AiOutlineUsergroupAdd className="text-3xl" />
+            </div>
+            <div className="stat-title">Unique SkillsBuild users</div>
+            <div className="stat-value text-primary">2.2M+</div>
+            <div className="stat-desc">15% more than last year</div>
+          </div>
+
+          <div className="stat">
+            <div className="stat-figure text-secondary">
+              <TbFileCertificate className="text-3xl" />
+            </div>
+            <div className="stat-title">Digital credentials issued</div>
+            <div className="stat-value text-secondary">221K+</div>
+            <div className="stat-desc">35% more than last year</div>
+          </div>
+
+          <div className="stat">
+            <div className="stat-figure text-secondary">
+              <FaRegHandshake className="text-3xl" />
+            </div>
+            <div className="stat-title">Global partners</div>
+            <div className="stat-value">500+</div>
+            <div className="stat-desc text-secondary">More everyday</div>
+          </div>
+        </div>
       </section>
     </>
   );
