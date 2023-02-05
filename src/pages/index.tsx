@@ -98,7 +98,8 @@ export default function Page() {
                 end={2200000}
                 duration={35}
                 separator=" "
-                delay={2}
+                delay={1}
+                enableScrollSpy={true}
               >
                 {({ countUpRef }) => (
                   <div>
@@ -121,7 +122,8 @@ export default function Page() {
                 end={220000}
                 duration={40}
                 separator=" "
-                delay={2}
+                delay={1}
+                enableScrollSpy={true}
               >
                 {({ countUpRef }) => (
                   <div>
@@ -144,7 +146,8 @@ export default function Page() {
                 end={500}
                 duration={45}
                 separator=" "
-                delay={2}
+                delay={1}
+                enableScrollSpy={true}
               >
                 {({ countUpRef }) => (
                   <div>
