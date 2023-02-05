@@ -5,6 +5,7 @@ import Script from "next/script";
 import { AiOutlineArrowRight, AiOutlineUsergroupAdd } from "react-icons/ai";
 import { TbFileCertificate } from "react-icons/tb";
 import { FaRegHandshake } from "react-icons/fa";
+import CountUp from "react-countup";
 
 export default function Page() {
   return (
@@ -57,9 +58,7 @@ export default function Page() {
           receivingMessage={true}
         />
       </section>
-
       {/* Steps */}
-
       <section className="h-[25rem] gap-3 text-center flex flex-col items-center justify-center">
         <h2 className="text-xl font-bold md:text-2xl">
           How to use our AI Chat bot
@@ -73,7 +72,6 @@ export default function Page() {
           <li className="step step-primary">Receive a pathway of links</li>
         </ul>
       </section>
-
       {/* IBM profile */}
       <section className="h-[30rem] flex flex-col gap-4 items-center justify-center text-center">
         <h3 className="text-xl font-bold md:text-2xl">
@@ -86,9 +84,7 @@ export default function Page() {
           Go <AiOutlineArrowRight />
         </Link>
       </section>
-
       {/* Stats  */}
-
       <section className="h-[30rem] flex items-center justify-center">
         <div className="shadow stats stats-vertical lg:stats-horizontal">
           <div className="stat">
@@ -96,7 +92,15 @@ export default function Page() {
               <AiOutlineUsergroupAdd className="text-3xl" />
             </div>
             <div className="stat-title">Unique SkillsBuild users</div>
-            <div className="stat-value text-primary">2.2M+</div>
+            <div className="stat-value text-primary">
+              <CountUp start={0} end={2200000} duration={35} separator=" ">
+                {({ countUpRef }) => (
+                  <div>
+                    <span ref={countUpRef} />
+                  </div>
+                )}
+              </CountUp>
+            </div>
             <div className="stat-desc">15% more than last year</div>
           </div>
 
@@ -105,7 +109,15 @@ export default function Page() {
               <TbFileCertificate className="text-3xl" />
             </div>
             <div className="stat-title">Digital credentials issued</div>
-            <div className="stat-value text-secondary">221K+</div>
+            <div className="stat-value text-secondary">
+              <CountUp start={0} end={220000} duration={40} separator=" ">
+                {({ countUpRef }) => (
+                  <div>
+                    <span ref={countUpRef} />
+                  </div>
+                )}
+              </CountUp>
+            </div>
             <div className="stat-desc">35% more than last year</div>
           </div>
 
@@ -114,17 +126,26 @@ export default function Page() {
               <FaRegHandshake className="text-3xl" />
             </div>
             <div className="stat-title">Global partners</div>
-            <div className="stat-value">500+</div>
+            <div className="stat-value">
+              <CountUp start={0} end={500} duration={45} separator=" ">
+                {({ countUpRef }) => (
+                  <div>
+                    <span ref={countUpRef} />
+                  </div>
+                )}
+              </CountUp>
+            </div>
             <div className="stat-desc text-secondary">More everyday</div>
           </div>
         </div>
       </section>
-
       {/* Trust brand */}
-
       <section className="h-[25rem] flex items-center justify-center text-center">
-        <h4 className="text-xl font-bold lg:text-2xl">Content and technology you can trust, backed by experts.</h4>
+        <h4 className="text-xl font-bold lg:text-2xl">
+          Content and technology you can trust, backed by experts.
+        </h4>
       </section>
+      §
     </>
   );
 }
