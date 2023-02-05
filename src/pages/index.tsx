@@ -93,7 +93,13 @@ export default function Page() {
             </div>
             <div className="stat-title">Unique SkillsBuild users</div>
             <div className="stat-value text-primary">
-              <CountUp start={0} end={2200000} duration={35} separator=" ">
+              <CountUp
+                start={0}
+                end={2200000}
+                duration={35}
+                separator=" "
+                delay={2}
+              >
                 {({ countUpRef }) => (
                   <div>
                     <span ref={countUpRef} />
@@ -110,7 +116,13 @@ export default function Page() {
             </div>
             <div className="stat-title">Digital credentials issued</div>
             <div className="stat-value text-secondary">
-              <CountUp start={0} end={220000} duration={40} separator=" ">
+              <CountUp
+                start={0}
+                end={220000}
+                duration={40}
+                separator=" "
+                delay={2}
+              >
                 {({ countUpRef }) => (
                   <div>
                     <span ref={countUpRef} />
@@ -127,7 +139,13 @@ export default function Page() {
             </div>
             <div className="stat-title">Global partners</div>
             <div className="stat-value">
-              <CountUp start={0} end={500} duration={45} separator=" ">
+              <CountUp
+                start={0}
+                end={500}
+                duration={45}
+                separator=" "
+                delay={2}
+              >
                 {({ countUpRef }) => (
                   <div>
                     <span ref={countUpRef} />
@@ -145,7 +163,6 @@ export default function Page() {
           Content and technology you can trust, backed by experts.
         </h4>
       </section>
-      §
     </>
   );
 }
