@@ -100,6 +100,7 @@ export default function Page() {
                 separator=" "
                 delay={1}
                 enableScrollSpy={true}
+                scrollSpyOnce={true}
               >
                 {({ countUpRef }) => (
                   <div>
@@ -124,6 +125,7 @@ export default function Page() {
                 separator=" "
                 delay={1}
                 enableScrollSpy={true}
+                scrollSpyOnce={true}
               >
                 {({ countUpRef }) => (
                   <div>
@@ -148,6 +150,7 @@ export default function Page() {
                 separator=" "
                 delay={1}
                 enableScrollSpy={true}
+                scrollSpyOnce={true}
               >
                 {({ countUpRef }) => (
                   <div>
