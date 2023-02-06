@@ -1,7 +1,7 @@
 # Prerequisites
 
-- Node js
-- pnpm 
+- [Node js](https://nodejs.org/en/)
+- [pnpm](https://pnpm.io/installation)
 
 # Running 
 

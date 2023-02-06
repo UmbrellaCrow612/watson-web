@@ -6,6 +6,7 @@ import { AiOutlineArrowRight, AiOutlineUsergroupAdd } from "react-icons/ai";
 import { TbFileCertificate } from "react-icons/tb";
 import { FaRegHandshake } from "react-icons/fa";
 import CountUp from "react-countup";
+import Card from "@/components/Card";
 
 export default function Page() {
   return (
@@ -164,10 +165,43 @@ export default function Page() {
         </div>
       </section>
       {/* Trust brand */}
-      <section className="h-[25rem] flex items-center justify-center text-center">
+      <section className="h-[10rem] flex items-center justify-center text-center">
         <h4 className="text-xl font-bold lg:text-2xl">
           Content and technology you can trust, backed by experts.
         </h4>
+      </section>
+
+      {/* Cards */}
+
+      <section className="flex flex-wrap items-center h-auto gap-5 py-5 justify-evenly">
+        <Card
+          imgSrc="/images/fortinet.png"
+          imgAlt="Fortinet"
+          cardTitle="Fortinet"
+          href="https://www.fortinet.com/"
+          cardBody="Global Leader of Cyber Security Solutions and Services"
+        />
+        <Card
+          imgSrc="/images/ibm.png"
+          imgAlt="ibm"
+          cardTitle="IBM"
+          href="https://www.ibm.com/uk-en"
+          cardBody="Creators, partners and clients putting technology to work in the real world"
+        />
+        <Card
+          imgSrc="/images/ipma.png"
+          imgAlt="impa"
+          cardTitle="IMPA"
+          href="https://www.ipma.world/"
+          cardBody="Qualification standards for working in project management"
+        />
+        <Card
+          imgSrc="/images/red-hat.png"
+          imgAlt="red hat"
+          cardTitle="Red Hat"
+          href="https://www.redhat.com/en"
+          cardBody="Deliver any application, on any cloud, enterprise open source leader"
+        />
       </section>
     </>
   );
