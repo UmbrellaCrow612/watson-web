@@ -175,14 +175,14 @@ export default function Page() {
 
       <section className="flex flex-wrap items-center h-auto gap-5 py-5 justify-evenly">
         <Card
-          imgSrc="/images/fortinet.png"
+          imgSrc="/images/fortinet.svg"
           imgAlt="Fortinet"
           cardTitle="Fortinet"
           href="https://www.fortinet.com/"
           cardBody="Global Leader of Cyber Security Solutions and Services"
         />
         <Card
-          imgSrc="/images/ibm.png"
+          imgSrc="/images/ibm.svg"
           imgAlt="ibm"
           cardTitle="IBM"
           href="https://www.ibm.com/uk-en"
@@ -196,7 +196,7 @@ export default function Page() {
           cardBody="Qualification standards for working in project management"
         />
         <Card
-          imgSrc="/images/red-hat.png"
+          imgSrc="/images/red-hat.svg"
           imgAlt="red hat"
           cardTitle="Red Hat"
           href="https://www.redhat.com/en"
