@@ -211,6 +211,25 @@ export default function Page() {
           cardBody="Deliver any application, on any cloud, enterprise open source leader"
         />
       </section>
+
+      {/* Phone mockup */}
+
+      <section className="flex flex-col items-center justify-center gap-5 py-5 text-center">
+        <h3 className="text-xl font-bold md:text-2xl">
+          What powers this website
+        </h3>
+        <div className="mockup-phone">
+          <div className="camera"></div>
+          <div className="display">
+            <div className="gap-4 artboard artboard-demo phone-1">
+              <span className="text-xl font-bold leading-tight tracking-wide text-primary">Watson Assistant</span>
+              <span className="text-xl font-bold leading-tight tracking-wide text-primary">Next js</span>
+              <span className="text-xl font-bold leading-tight tracking-wide text-primary">Tailwind css</span>
+              <span className="text-xl font-bold leading-tight tracking-wide text-primary">DaisyUI</span>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
