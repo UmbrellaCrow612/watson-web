@@ -215,17 +215,17 @@ export default function Page() {
       {/* Phone mockup */}
 
       <section className="flex flex-col items-center justify-center gap-5 py-5 text-center">
-        <h3 className="text-xl font-bold md:text-2xl">
-          What powers this website
-        </h3>
+        <h2 className="text-2xl font-bold md:text-3xl">
+          Download our app to keep you on top
+        </h2>
         <div className="mockup-phone">
           <div className="camera"></div>
           <div className="display">
-            <div className="gap-4 artboard artboard-demo phone-1">
-              <span className="text-xl font-bold leading-tight tracking-wide text-primary">Watson Assistant</span>
-              <span className="text-xl font-bold leading-tight tracking-wide text-primary">Next js</span>
-              <span className="text-xl font-bold leading-tight tracking-wide text-primary">Tailwind css</span>
-              <span className="text-xl font-bold leading-tight tracking-wide text-primary">DaisyUI</span>
+            <div className="flex flex-col items-center justify-center gap-5 artboard artboard-demo phone-1">
+              <h3 className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+                Skills Build
+              </h3>
+              <span>On Android and ios</span>
             </div>
           </div>
         </div>
