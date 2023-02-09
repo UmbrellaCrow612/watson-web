@@ -218,18 +218,44 @@ export default function Page() {
         <h2 className="text-2xl font-bold md:text-3xl">
           Download our app to keep you on top
         </h2>
-        <div className="mockup-phone">
-          <div className="camera"></div>
-          <div className="display">
-            <div className="flex flex-col items-center justify-center gap-5 artboard artboard-demo phone-1">
-              <h3 className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-                Skills Build
-              </h3>
-              <span>On Android and ios</span>
+        {/* Flex container */}
+        <div className="flex flex-wrap items-center w-full gap-5 justify-evenly">
+          {/* Phone 1 */}
+          <div className="mockup-phone">
+            <div className="camera"></div>
+            <div className="display">
+              <div className="flex flex-col items-center justify-center gap-5 artboard artboard-demo phone-1">
+                <h3 className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+                  Skills Build
+                </h3>
+                <span>On Android and ios</span>
+              </div>
+            </div>
+          </div>
+          {/* Phone 2 */}
+          <div className="mockup-phone">
+            <div className="camera"></div>
+            <div className="display">
+              <div className="flex flex-col items-center justify-center gap-5 artboard artboard-demo phone-1">
+                <ChatBubble
+                  text="Hey i want to learn ..."
+                  receivingMessage={false}
+                />
+                <ChatBubble
+                  text="Sure here are resources on the app ..."
+                  receivingMessage={true}
+                />
+                <span>
+                  Have chats in app, save them, have a easy time learning what
+                  you need
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Phone mockup with chat*/}
     </>
   );
 }
