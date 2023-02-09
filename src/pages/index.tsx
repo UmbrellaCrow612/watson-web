@@ -214,7 +214,7 @@ export default function Page() {
 
       {/* Phone mockup */}
 
-      <section className="flex flex-col items-center justify-center gap-5 py-5 text-center">
+      <section className="flex flex-col items-center justify-center gap-5 py-20 text-center">
         <h2 className="text-2xl font-bold md:text-3xl">
           Download our app to keep you on top
         </h2>
