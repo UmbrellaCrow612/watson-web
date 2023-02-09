@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { BiMenuAltRight } from "react-icons/bi";
 
 export default function MobileMenu() {
@@ -12,10 +13,14 @@ export default function MobileMenu() {
           className="p-2 shadow dropdown-content menu bg-base-100 rounded-box w-52"
         >
           <li>
-            <a className="btn btn-ghost">Login</a>
+            <Link href="https://skillsbuild.org/" className="btn btn-ghost">
+              Login
+            </Link>
           </li>
           <li>
-            <a className="btn btn-ghost">Sign up</a>
+            <Link href="https://skillsbuild.org/" className="btn btn-ghost">
+              Sign up
+            </Link>
           </li>
         </ul>
       </div>
