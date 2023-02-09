@@ -29,10 +29,29 @@ export default function Page() {
           name="description"
           content="The portal to find and navigate the vast amount of resources and learning materials offered by IBM skills build"
         />
+
+        {/* OG stuff */}
+        <meta property="og:title" content="IBM AI SKILLS BUILD" />
+        <meta property="og:site_name" content="IBM AI SKILLS BUILD" />
+        <meta property="og:url" content="https://watson-web.vercel.app" />
+        <meta
+          property="og:description"
+          content="The portal to find and navigate the vast amount of resources and learning materials offered by IBM skills build "
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://www.ibm.com/events/think/srcfiles/images/think-og.jpg"
+        />
+        {/* OG stuff ends */}
+
+        {/* Meta default tags */}
         <meta httpEquiv="X-UA-Compatible" content="IE=7" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        {/* Favicon */}
         <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
       </Head>
       <section className="h-[30rem] flex flex-col gap-4 items-center justify-center text-center">
