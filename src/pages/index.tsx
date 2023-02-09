@@ -41,7 +41,7 @@ export default function Page() {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://www.ibm.com/events/think/srcfiles/images/think-og.jpg"
+          content="https://s.marketwatch.com/public/resources/images/MW-GR716_IBM_10_ZH_20181012135603.jpg"
         />
         {/* OG stuff ends */}
 
