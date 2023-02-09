@@ -228,7 +228,16 @@ export default function Page() {
                 <h3 className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
                   Skills Build
                 </h3>
-                <span>On Android and ios</span>
+                <div>
+                  On{" "}
+                  <Link href="/" className="link">
+                    Android
+                  </Link>{" "}
+                  and{" "}
+                  <Link href="/" className="link">
+                    ios
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -255,7 +264,15 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Phone mockup with chat*/}
+      {/* Window mockup */}
+
+      <section className="py-5">
+        <div className="border mockup-window bg-base-300">
+          <div className="flex justify-center px-4 py-16 bg-base-200">
+            Be able to learn on both on mobile and web at the same time
+          </div>
+        </div>
+      </section>
     </>
   );
 }
