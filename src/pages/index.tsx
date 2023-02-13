@@ -296,8 +296,8 @@ export default function Page() {
           required
         ></textarea>
         <div className="flex flex-col items-center justify-center w-full gap-4 md:flex-row">
-          <button className="btn-outline btn">Submit</button>
-          <button className="btn btn-primary">Cancel</button>
+          <button className="btn-primary btn">Submit</button>
+          <button className="btn btn-outline">Cancel</button>
         </div>
       </form>
     </>
