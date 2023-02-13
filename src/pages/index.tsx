@@ -273,6 +273,33 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      {/* Feedback form */}
+
+      <form className="flex flex-col items-center justify-center h-auto gap-10 py-10">
+        <h3 className="text-3xl font-bold md:text-5xl">Contact Us</h3>
+        <input
+          type="email"
+          placeholder="Email"
+          className="w-full input input-bordered"
+          required
+        />
+        <input
+          type="text"
+          placeholder="Subject"
+          className="w-full input input-bordered"
+          required
+        />
+        <textarea
+          className="w-full textarea textarea-bordered"
+          placeholder="Message"
+          required
+        ></textarea>
+        <div className="flex flex-col items-center justify-center w-full gap-4 md:flex-row">
+          <button className="btn-outline btn">Submit</button>
+          <button className="btn btn-primary">Cancel</button>
+        </div>
+      </form>
     </>
   );
 }
