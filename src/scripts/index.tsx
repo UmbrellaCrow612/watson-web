@@ -3,7 +3,8 @@ export const WatsonScript = `window.watsonAssistantChatOptions = {
     region: "eu-gb",
     serviceInstanceID: "9105472d-0990-4acc-a349-661d4607d608",
     onLoad: function(instance) { instance.render(); },
-    enableFocusTrap:true
+    enableFocusTrap:true,
+    showCloseAndRestartButton:true
   };
   setTimeout(function(){
     const t=document.createElement('script');
