@@ -7,18 +7,10 @@ import { TbFileCertificate } from "react-icons/tb";
 import { FaRegHandshake } from "react-icons/fa";
 import CountUp from "react-countup";
 import Card from "@/components/Card";
-import { WatsonScript } from "../scripts/index";
 
 export default function Page() {
   return (
     <>
-      <Script
-        id="watson-script"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: WatsonScript,
-        }}
-      />
       <Head>
         <title>IBM AI Skills Build</title>
         <meta
