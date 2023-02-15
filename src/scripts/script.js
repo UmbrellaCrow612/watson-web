@@ -163,6 +163,8 @@ if (typeof window !== "undefined") {
     region: "eu-gb",
     serviceInstanceID: "9105472d-0990-4acc-a349-661d4607d608",
     onLoad: onLoad,
+    enableFocusTrap: true,
+    showCloseAndRestartButton: true,
   };
   setTimeout(function () {
     const t = document.createElement("script");
