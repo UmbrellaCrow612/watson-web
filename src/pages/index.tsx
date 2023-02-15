@@ -86,7 +86,7 @@ export default function Page() {
         </Link>
       </section>
       {/* Stats  */}
-      <section className="h-[30rem] flex items-center justify-center">
+      <section className="h-[20rem] flex items-center justify-center">
         <div className="shadow stats stats-vertical lg:stats-horizontal">
           <div className="stat">
             <div className="stat-figure text-primary">
