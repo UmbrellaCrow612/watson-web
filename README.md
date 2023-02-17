@@ -18,3 +18,6 @@ pnpm run dev
 ```
 
 Go to localhost 3000
+
+
+- Add skip to btn id WACLauncher_Button like skip content button 
